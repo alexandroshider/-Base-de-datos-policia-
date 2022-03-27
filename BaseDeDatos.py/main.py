@@ -1,5 +1,5 @@
-from Juez import *
-from Banco import *
+from juez import *
+from banco import *
 def mainP():
     print("**POlICIA**")
     print("Base de datos")
@@ -7,7 +7,8 @@ def mainP():
     print("1.-Juez\n2.Banco")
     opM=int(input(">"))
     if opM==1:
-        main.jueMain()
+        main=Juez()
+        main.mainJuez()
     elif opM==2:
         bmain=Banco()
         bmain.mainBanco()
